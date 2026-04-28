@@ -102,15 +102,49 @@ img {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: var(--spacing-sm) var(--spacing-md);
+        width: 44px;
+        height: 44px;
+        padding: 0;
         background-color: var(--color-green);
         color: var(--color-white);
-        border-radius: var(--border-radius);
+        border-radius: 14px;
         border: none;
         font-family: var(--font-primary);
         font-weight: 600;
         cursor: pointer;
         transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+    }
+
+    .header__menu-icon {
+        display: block;
+        position: relative;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+    }
+
+    .header__menu-icon::before,
+    .header__menu-icon::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+    }
+
+    .header__menu-icon::before {
+        top: -6px;
+    }
+
+    .header__menu-icon::after {
+        top: 6px;
+    }
+
+    .header__menu-toggle:hover,
+    .header__menu-toggle:focus-visible {
+        background-color: var(--color-green-dark);
+        transform: scale(1.02);
     }
 
     .header__menu-toggle:hover,
