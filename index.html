@@ -25,7 +25,8 @@
                 <img src="assets/icons/balanca.svg" alt="Balança da Justiça" class="header__icon">
                 <span class="header__name">Frederico Bonfim Advocacia</span>
             </div>
-            <nav class="header__nav">
+            <button type="button" class="btn btn--primary header__menu-toggle" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+            <nav class="header__nav header__nav--desktop">
                 <ul class="header__nav-list">
                     <li><a href="#sobre" class="header__nav-link">Sobre</a></li>
                     <li><a href="#areas" class="header__nav-link">Áreas</a></li>
@@ -33,6 +34,13 @@
             </nav>
             <a href="#contato" class="btn btn--primary header__cta">Contato</a>
         </div>
+        <nav class="header__nav header__nav--mobile" id="mobile-menu" aria-hidden="true">
+            <ul class="header__nav-list header__nav-list--mobile">
+                <li><a href="#sobre" class="header__nav-link">Sobre</a></li>
+                <li><a href="#areas" class="header__nav-link">Áreas</a></li>
+                <li><a href="#contato" class="header__nav-link">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Hero / Sobre Mim -->
