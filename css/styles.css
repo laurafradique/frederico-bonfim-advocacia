@@ -164,7 +164,7 @@ img {
     /* Hero */
     .hero {
         padding: var(--spacing-xl) 0;
-        background-color: var(--color-white);
+        background-color: transparent;
     }
 
     .hero__content {
@@ -177,13 +177,22 @@ img {
         display: flex;
         justify-content: center;
         margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        max-width: 420px;
+        border-radius: 24px;
+        background: transparent;
+        box-shadow: 0 22px 60px rgba(0, 0, 0, 0.12);
     }
 
     .hero__image img {
     width: 100%;
-    max-width: 300px;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
+    display: block;
+    border-radius: 24px;
+    object-fit: cover;
+    box-shadow: none;
+    mask-image: none;
+    -webkit-mask-image: none;
 }
 
 .hero__title {
@@ -326,6 +335,7 @@ img {
 .card__description.card__clamped {
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     max-height: 4.6rem;
@@ -386,7 +396,7 @@ img {
 .btn {
     display: inline-flex;
     align-items: center;
-    padding: var(--spacing-sm) var(--spacing-md);
+    padding: 0.65rem var(--spacing-md);
     border: none;
     border-radius: var(--border-radius);
     font-family: var(--font-primary);
@@ -456,13 +466,40 @@ img {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .header {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
     .header .container {
-        padding: 0 20px;
+        padding: 0 18px;
+        min-height: 56px;
         justify-content: space-between;
+        align-items: center;
+        gap: 12px;
     }
 
     .header__logo {
-        gap: 0.5rem;
+        flex: 1 1 auto;
+        min-width: 0;
+        gap: 0.4rem;
+        font-size: 0.98rem;
+        line-height: 1.1;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .header__logo .header__icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.35rem;
+    }
+
+    .header__logo .header__name {
+        display: inline-block;
+        max-width: calc(100% - 60px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .header__nav--desktop,
@@ -472,6 +509,111 @@ img {
 
     .header__menu-toggle {
         display: inline-flex;
+        width: 38px;
+        height: 38px;
+        padding: 0;
+        border-radius: 10px;
+        background-color: var(--color-green);
+        box-shadow: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__menu-icon {
+        width: 18px;
+        height: 2px;
+        background-color: currentColor;
+    }
+
+    .header__menu-icon::before,
+    .header__menu-icon::after {
+        left: 0;
+        width: 18px;
+        height: 2px;
+        background-color: currentColor;
+    }
+
+    .header__menu-icon::before {
+        top: -5px;
+    }
+
+    .header__menu-icon::after {
+        top: 5px;
+    }
+
+    .hero__content {
+        gap: 1.4rem;
+    }
+
+    .hero {
+        padding-top: 0;
+    }
+
+    .hero__image {
+        width: 100vw;
+        position: relative;
+        margin-left: calc(50% - 50vw);
+        overflow: hidden;
+        max-width: none;
+        border-radius: 0;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .hero__image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .hero__image::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 180px;
+        background: linear-gradient(
+            to bottom,
+            rgba(245,246,247,0) 0%,
+            rgba(245,246,247,1) 100%
+        );
+        pointer-events: none;
+    }
+
+    .contato__actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .contato__actions .btn {
+        padding: 0.8rem 1rem;
+        font-size: 0.95rem;
+        min-width: 140px;
+        border-radius: 10px;
+    }
+
+    .contato__actions .btn--whatsapp,
+    .contato__actions .btn--email {
+        width: auto;
+    }
+
+    .contato__actions .btn__icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 0.4rem;
+    }
+
+    .contato__actions .btn {
+        justify-content: center;
     }
 }
 
@@ -479,7 +621,7 @@ img {
     .hero__content {
         flex-direction: row;
         align-items: flex-start;
-        gap: var(--spacing-xl);
+        gap: calc(var(--spacing-xl) + 1rem);
     }
 
     .hero__image {
@@ -487,12 +629,42 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
+        max-width: 420px;
+        background: transparent;
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 100%);
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 100%);
+    }
+
+    /* overflow: hidden; */
+    /* box-shadow: 0 22px 60px rgba(0, 0, 0, 0.12); */
+
+    .hero__image::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background: radial-gradient(circle at top left, rgba(47, 143, 94, 0.18), transparent 28%);
+        filter: blur(30px);
+        opacity: 0.75;
+    }
+
+    .hero__image img {
+        width: 100%;
+        max-height: 560px;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+        display: block;
+        position: relative;
+        z-index: 1;
+        border-radius: 0;
+        box-shadow: none;
     }
 
     .hero__body {
         flex: 2;
         display: grid;
-        gap: var(--spacing-lg);
+        gap: calc(var(--spacing-lg) + 0.5rem);
     }
 
     .hero__text {
@@ -510,6 +682,8 @@ img {
 
     .header__nav--desktop {
         display: block;
+        margin-left: auto;
+        margin-right: var(--spacing-lg);
     }
 
     .header__cta {
@@ -533,4 +707,9 @@ img {
 .header__nav-link:focus-visible {
     outline: 3px solid rgba(47, 143, 94, 0.3);
     outline-offset: 3px;
+}
+
+/* Afasta o botão específico do Hero em relação ao texto de cima */
+.hero__text .btn {
+    margin-top: var(--spacing-md); /* Adiciona um espaço de 1.5rem (ou 24px) */
 }
