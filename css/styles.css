@@ -3,8 +3,8 @@
     --color-gray-dark: #2B2B2B;
     --color-gray-medium: #6B6B6B;
     --color-gray-light: #F5F6F7;
-    --color-green: #2F8F5E;
-    --color-green-dark: #1F6B46;
+    --color-green: #2E6B4F;
+    --color-green-dark: #1D4D38;
     --color-white: #FFFFFF;
     --font-primary: 'Montserrat', sans-serif;
     --font-secondary: 'Roboto', sans-serif;
@@ -32,6 +32,7 @@ body {
     color: var(--color-gray-dark);
     background-color: var(--color-gray-light);
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
 
 img {
@@ -50,8 +51,10 @@ img {
 .header {
     position: sticky;
     top: 0;
-    background-color: var(--color-white);
-    box-shadow: var(--box-shadow);
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
     z-index: 100;
 }
 
@@ -301,17 +304,19 @@ img {
 }
 
 .areas__card {
-    background-color: var(--color-white);
+    background-color: rgba(255,255,255,0.9);
     padding: var(--spacing-md);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
+    border-radius: 18px;
+    border: 1px solid rgba(0,0,0,0.04);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease; 
 }
 
 .areas__card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 24px rgba(47, 143, 94, 0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+    border-color: rgba(46,107,79,0.18);
 }
 
 .card__icon {
@@ -375,10 +380,15 @@ img {
 
 /* Footer */
 .footer {
-    padding: var(--spacing-lg) 0;
-    background-color: var(--color-gray-dark);
-    color: var(--color-white);
+    padding: 3rem 0;
+    background: linear-gradient(
+        to bottom,
+        #1f1f1f,
+        #161616
+    );
+    color: rgba(255,255,255,0.85);
     text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.04);
 }
 
 .footer a {
@@ -404,6 +414,7 @@ img {
     text-decoration: none;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+    letter-spacing: 0.3px;
 }
 
 .btn--primary {
@@ -413,8 +424,8 @@ img {
 
 .btn--primary:hover {
     background-color: var(--color-green-dark);
-    transform: scale(1.03);
-    box-shadow: 0 6px 18px rgba(47, 143, 94, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(46,107,79,0.22);
 }
 
 .btn--secondary {
