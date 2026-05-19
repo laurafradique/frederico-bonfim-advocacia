@@ -1,6 +1,6 @@
-# Site Institucional - Advogado Dr. Rafael Monteiro
+# Site Institucional - Advogado Frederico
 
-Este é um site one-page moderno para o advogado Dr. Rafael Monteiro, desenvolvido em HTML, CSS e JavaScript puros. O projeto é otimizado para deploy direto na Vercel via GitHub.
+Este é um site one-page moderno para o advogado Frederico, desenvolvido em HTML, CSS e JavaScript puros. O projeto é otimizado para deploy direto na Vercel via GitHub.
 
 ## Estrutura do Projeto
 
