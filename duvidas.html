@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18174941352"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-18174941352');
+    </script>
+    <!-- Marca que o JS está ativo (animações só escondem conteúdo se o JS rodar) -->
+    <script>document.documentElement.classList.add('js');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dúvidas frequentes | Frederico Bonfim Advocacia</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icons/balanca.svg">
+    <meta name="description" content="Respostas para dúvidas frequentes sobre Direito do Trabalho, Direito Civil e Securitário e Direito do Consumidor. Frederico Bonfim Advocacia, OAB/SP 430.782.">
+    <meta name="author" content="Laura Fradique">
+    <meta name="theme-color" content="#2E6B4F">
+    <!-- Open Graph básico -->
+    <meta property="og:title" content="Dúvidas frequentes | Frederico Bonfim Advocacia">
+    <meta property="og:description" content="Respostas para dúvidas frequentes sobre Direito do Trabalho, Direito Civil e Securitário e Direito do Consumidor.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="header__logo">
+                <img src="assets/icons/balanca.svg" alt="" class="header__icon">
+                <span class="header__name">Frederico Bonfim Advocacia</span>
+            </a>
+            <button type="button" class="btn btn--primary header__menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu">
+                <span class="header__menu-icon"></span>
+            </button>
+            <nav class="header__nav header__nav--desktop" aria-label="Menu principal">
+                <ul class="header__nav-list">
+                    <li><a href="index.html#sobre" class="header__nav-link">Sobre</a></li>
+                    <li><a href="index.html#areas" class="header__nav-link">Áreas</a></li>
+                    <li><a href="duvidas.html" class="header__nav-link" aria-current="page">Dúvidas</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="header__nav header__nav--mobile" id="mobile-menu" aria-label="Menu principal" aria-hidden="true">
+            <ul class="header__nav-list header__nav-list--mobile">
+                <li><a href="index.html#sobre" class="header__nav-link">Sobre</a></li>
+                <li><a href="index.html#areas" class="header__nav-link">Áreas</a></li>
+                <li><a href="duvidas.html" class="header__nav-link" aria-current="page">Dúvidas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+    <!--
+        COMO EDITAR AS DÚVIDAS
+        - Cada pergunta é um bloco <details class="faq__item" id="...">.
+        - O id vira o link direto da pergunta (ex.: duvidas.html#trabalho-prazo) — use em anúncios do Google Ads.
+          Use letras minúsculas, sem acento e sem espaço; não repita ids e evite mudar ids já usados em anúncios.
+        - Para nova pergunta: copie um bloco <details> inteiro dentro do grupo da área e altere id, pergunta e resposta.
+        - Os dados estruturados para o Google (FAQPage) são gerados automaticamente a partir destes blocos.
+        - Respostas aprovadas pelo advogado em 29/10/2026. Novas perguntas ou alterações precisam passar pela aprovação dele.
+    -->
+    <section class="faq" aria-labelledby="faq-title">
+        <div class="container faq__content">
+            <h1 id="faq-title" class="section-title">Dúvidas frequentes</h1>
+            <p class="section-description">Reunimos respostas para as perguntas mais comuns sobre as nossas áreas de atuação. Clique em uma pergunta para ver a resposta.</p>
+
+            <nav class="faq__nav" aria-label="Áreas das dúvidas">
+                <a href="#duvidas-trabalho" class="faq__nav-link">Direito do Trabalho</a>
+                <a href="#duvidas-civil" class="faq__nav-link">Direito Civil e Securitário</a>
+                <a href="#duvidas-consumidor" class="faq__nav-link">Direito do Consumidor</a>
+            </nav>
+
+            <!-- Direito do Trabalho -->
+            <div class="faq__group" id="duvidas-trabalho">
+                <div class="faq__group-header">
+                    <div class="faq__group-icon"><img src="assets/icons/area-trabalho.svg" alt=""></div>
+                    <h2 class="faq__group-title">Direito do Trabalho</h2>
+                </div>
+                <div class="faq__list">
+                    <details class="faq__item" id="trabalho-prazo">
+                        <summary class="faq__question">Qual o prazo para entrar com uma ação trabalhista?</summary>
+                        <div class="faq__answer">
+                            <p>Em regra, o trabalhador tem até 2 anos após o fim do contrato de trabalho para entrar com a ação, podendo cobrar direitos referentes aos últimos 5 anos, contados da data em que a ação é proposta. Por isso, é importante buscar orientação o quanto antes.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item" id="trabalho-sem-carteira">
+                        <summary class="faq__question">Trabalhei sem carteira assinada. Tenho direitos?</summary>
+                        <div class="faq__answer">
+                            <p>Sim. Quando o trabalho é prestado de forma pessoal, habitual, com subordinação e mediante pagamento, é possível pedir na Justiça o reconhecimento do vínculo de emprego e o pagamento das verbas correspondentes, como férias, 13º salário, FGTS e verbas rescisórias.</p>
+                            <p>Mensagens, comprovantes de pagamento e testemunhas ajudam a demonstrar a relação de trabalho.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item" id="trabalho-horas-extras">
+                        <summary class="faq__question">Como comprovar horas extras não pagas?</summary>
+                        <div class="faq__answer">
+                            <p>Os cartões de ponto são a principal prova, mas também podem ser usados mensagens, e-mails, registros de acesso a sistemas e o depoimento de testemunhas. Empresas com mais de 20 empregados são obrigadas a manter controle de jornada.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item" id="trabalho-acidente">
+                        <summary class="faq__question">Sofri um acidente de trabalho. O que posso pedir?</summary>
+                        <div class="faq__answer">
+                            <p>Dependendo do caso, é possível pedir indenização por danos materiais (como despesas médicas e redução da capacidade de trabalho), morais e estéticos. O empregado afastado pelo INSS em razão de acidente de trabalho também tem, em regra, estabilidade de 12 meses após o retorno.</p>
+                            <p>Guarde atestados, exames e a CAT (Comunicação de Acidente de Trabalho).</p>
+                        </div>
+                    </details>
+                    <details class="faq__item" id="trabalho-insalubridade">
+                        <summary class="faq__question">Como saber se tenho direito ao adicional de insalubridade ou de periculosidade?</summary>
+                        <div class="faq__answer">
+                            <p>O direito depende das condições do ambiente de trabalho: exposição a ruído, calor, agentes químicos ou biológicos (insalubridade), ou a inflamáveis, explosivos, eletricidade e outras situações de risco (periculosidade). Em processos judiciais, essa avaliação normalmente é feita por perícia técnica.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item" id="trabalho-rescisao-indireta">
+                        <summary class="faq__question">Posso processar a empresa enquanto ainda trabalho nela?</summary>
+                        <div class="faq__answer">
+                            <p>Sim. Além disso, quando a empresa descumpre obrigações graves do contrato — como atrasar salários com frequência ou não depositar o FGTS —, é possível pedir a rescisão indireta, que funciona como uma "justa causa" aplicada ao empregador e garante as verbas de uma demissão sem justa causa.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Direito Civil e Securitário -->
+            <div class="faq__group" id="duvidas-civil">
+                <div class="faq__group-header">
+                    <div class="faq__group-icon"><img src="assets/icons/area-civil-securitario.svg" alt=""></div>
+                    <h2 class="faq__group-title">Direito Civil e Securitário</h2>
+                </div>
+                <div class="faq__list">
+                    <details class="faq__item" id="seguro-negativa">
+                        <summary class="faq__question">A seguradora negou o pagamento do seguro. O que fazer?</summary>
+                        <div class="faq__answer">
+                            <p>Peça a negativa por escrito, com o motivo, e reúna a apólice, as condições gerais do seguro e os documentos do sinistro. Muitas negativas se baseiam em interpretações de cláusulas que podem ser questionadas, inclusive na Justiça.</p>
+                            <p>Atenção: os prazos para cobrar a seguradora são curtos, por isso é importante buscar orientação rapidamente.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item" id="seguro-prestamista">
+                        <summary class="faq__question">O que é seguro prestamista e quando ele deve ser pago?</summary>
+                        <div class="faq__answer">
+                            <p>É o seguro contratado junto com empréstimos e financiamentos para quitar o saldo devedor em situações como morte ou invalidez do contratante, conforme previsto na apólice. Se o evento coberto ocorreu e a dívida continua sendo cobrada do segurado ou da família, é possível exigir o cumprimento do contrato.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item" id="seguro-veiculo">
+                        <summary class="faq__question">O valor pago pela seguradora no meu veículo está correto?</summary>
+                        <div class="faq__answer">
+                            <p>A indenização deve seguir o que foi contratado na apólice. Divergências sobre o valor pago, sobre a caracterização de perda total ou atrasos no pagamento podem ser analisadas e, se for o caso, discutidas judicialmente.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item" id="locacao-inadimplencia">
+                        <summary class="faq__question">O inquilino parou de pagar o aluguel. Como proceder?</summary>
+                        <div class="faq__answer">
+                            <p>O primeiro passo costuma ser uma notificação formal para pagamento. Persistindo a inadimplência, é possível ajuizar ação de despejo por falta de pagamento, que pode ser acompanhada da cobrança dos aluguéis e encargos em atraso.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item" id="cobranca-credito">
+                        <summary class="faq__question">Alguém me deve e não paga. O que pode ser feito?</summary>
+                        <div class="faq__answer">
+                            <p>É possível começar pela cobrança extrajudicial, com notificação e tentativa de acordo. Sem solução, cabem medidas judiciais, cuja escolha depende dos documentos que comprovam a dívida, como contratos, cheques, notas promissórias, mensagens e comprovantes de transferência.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item" id="inventario-prazo">
+                        <summary class="faq__question">Qual o prazo para abrir o inventário?</summary>
+                        <div class="faq__answer">
+                            <p>O inventário deve ser aberto em até 2 meses a contar do falecimento. O atraso pode gerar multa sobre o imposto de transmissão (ITCMD), conforme a legislação de cada estado.</p>
+                            <p>Quando todos os herdeiros estão de acordo, o inventário pode, em regra, ser feito em cartório, de forma mais rápida.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Direito do Consumidor -->
+            <div class="faq__group" id="duvidas-consumidor">
+                <div class="faq__group-header">
+                    <div class="faq__group-icon"><img src="assets/icons/area-consumidor.svg" alt=""></div>
+                    <h2 class="faq__group-title">Direito do Consumidor</h2>
+                </div>
+                <div class="faq__list">
+                    <details class="faq__item" id="consumidor-desconto-beneficio">
+                        <summary class="faq__question">Estão descontando valores da minha aposentadoria que eu não autorizei. O que fazer?</summary>
+                        <div class="faq__answer">
+                            <p>Verifique no extrato do benefício, pelo aplicativo ou site Meu INSS, a origem dos descontos, como empréstimos consignados, cartões ou mensalidades de associações. Descontos não autorizados podem ser contestados, com pedido de restituição dos valores — em determinadas situações, em dobro — e, conforme o caso, indenização por danos morais.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item" id="consumidor-conta-bancaria">
+                        <summary class="faq__question">O banco bloqueou ou encerrou minha conta sem explicação. Isso é permitido?</summary>
+                        <div class="faq__answer">
+                            <p>O banco deve informar o motivo e respeitar as regras de comunicação prévia para o encerramento da conta. Bloqueios e encerramentos arbitrários, que impedem o acesso ao dinheiro sem justificativa, podem ser questionados judicialmente, inclusive com pedido de urgência para liberação dos valores.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item" id="consumidor-rede-social">
+                        <summary class="faq__question">Meu perfil em rede social foi suspenso ou bloqueado. Dá para recuperar?</summary>
+                        <div class="faq__answer">
+                            <p>Quando a suspensão ocorre sem justificativa clara ou sem oportunidade de defesa, é possível pedir a reativação do perfil na Justiça, especialmente quando ele é usado para trabalho ou vendas. Em alguns casos, também cabe indenização pelos prejuízos causados.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item" id="consumidor-ecommerce">
+                        <summary class="faq__question">Minha conta de vendedor em uma plataforma de e-commerce foi suspensa. O que fazer?</summary>
+                        <div class="faq__answer">
+                            <p>Reúna as comunicações da plataforma, o histórico de vendas e os comprovantes de saldo retido. Suspensões sem motivo claro e retenções indevidas de valores podem ser contestadas judicialmente, com pedido de reativação da conta, liberação do saldo e, conforme o caso, indenização pelos prejuízos.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item" id="consumidor-juros-abusivos">
+                        <summary class="faq__question">Acho que estou pagando juros abusivos. É possível revisar o contrato?</summary>
+                        <div class="faq__answer">
+                            <p>Sim. Contratos de empréstimo, financiamento e cartão de crédito podem ser analisados para verificar se os juros estão muito acima da média de mercado divulgada pelo Banco Central ou se há tarifas indevidas. Nesses casos, é possível pedir a revisão do contrato e a devolução do que foi cobrado a mais.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item" id="consumidor-nome-negativado">
+                        <summary class="faq__question">Meu nome foi negativado por uma dívida que não reconheço. O que fazer?</summary>
+                        <div class="faq__answer">
+                            <p>A inclusão indevida em cadastros de inadimplentes pode ser contestada, com pedido de retirada do nome e, conforme o caso, indenização por danos morais. Se a dívida existe, também é possível buscar a renegociação e a regularização do nome.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item" id="consumidor-produto-defeito">
+                        <summary class="faq__question">Comprei um produto com defeito e a empresa não resolve. Quais são meus direitos?</summary>
+                        <div class="faq__answer">
+                            <p>Se o defeito não for resolvido em até 30 dias, o consumidor pode escolher entre a troca do produto, a devolução do valor pago ou o abatimento proporcional do preço. Falhas na prestação de serviços também podem gerar responsabilidade da empresa pelos danos causados.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <p class="faq__disclaimer">As respostas acima têm caráter informativo e não substituem a análise do caso concreto por um advogado.</p>
+
+            <!-- Chamada para contato -->
+            <div class="faq__cta">
+                <h2 class="faq__cta-title">Não encontrou a sua dúvida?</h2>
+                <p class="faq__cta-text">Entre em contato e conte um pouco sobre o seu caso.</p>
+                <div class="faq__cta-actions">
+                    <a href="https://wa.me/5516992808368?text=Ol%C3%A1!%20Encontrei%20seu%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20conversar%20sobre%20um%20atendimento." class="btn btn--whatsapp" target="_blank" rel="noopener">
+                        <svg class="btn__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        WhatsApp<span class="sr-only"> (abre em nova aba)</span>
+                    </a>
+                    <a href="mailto:fredericohrcbonfim@gmail.com" class="btn btn--email">
+                        <svg class="btn__icon" aria-hidden="true" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V10"/><path d="M4 10l12 9 12-9"/></svg>
+                        E-mail
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Atalho flutuante para WhatsApp (somente mobile) -->
+    <a href="https://wa.me/5516992808368?text=Ol%C3%A1!%20Encontrei%20seu%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20conversar%20sobre%20um%20atendimento." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp (abre em nova aba)">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <img src="assets/icons/balanca.svg" alt="" class="footer__icon">
+            <p class="footer__name">Frederico H. R. C. Bonfim — OAB/SP 430.782</p>
+            <p class="footer__contact">
+                <a href="https://wa.me/5516992808368" target="_blank" rel="noopener">WhatsApp (16) 99280-8368<span class="sr-only"> (abre em nova aba)</span></a>
+                <span aria-hidden="true">·</span>
+                <a href="mailto:fredericohrcbonfim@gmail.com">fredericohrcbonfim@gmail.com</a>
+            </p>
+            <p class="footer__info">Atendimento das 9h às 18h</p>
+            <p class="footer__info">Presencial em Franca/SP e região · Virtual em todo o Brasil</p>
+            <p class="footer__links"><a href="politica-de-privacidade.html">Política de Privacidade</a></p>
+            <p class="footer__copy">&copy; <span data-ano-atual>2026</span> Frederico Bonfim Advocacia. Todos os direitos reservados.</p>
+            <p class="footer__credit">Desenvolvido por <a href="https://br.linkedin.com/in/laura-fradique-8b818320b" target="_blank" rel="noopener">Laura Fradique<span class="sr-only"> (abre em nova aba)</span></a></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
